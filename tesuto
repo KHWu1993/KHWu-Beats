@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Kohei Music Library</title>
+  <title>KHWu Beats</title>
   <style>
     body { font-family: sans-serif; margin: 20px; background: #f5f5f5; }
     h1 { margin-bottom: 5px; }
@@ -14,14 +14,13 @@
   </style>
 </head>
 <body>
-  <h1>Kohei Free Music</h1>
-  <p>ここでは、恒平が作曲した楽曲を無料でダウンロードできます。<br>
-     利用条件：クレジット表記「Music: Kohei」をお願いします。商用利用は事前相談してください。</p>
+  <h1>KHWu Beats</h1>
+  <p>ここでは、KHWuが作曲したBeatを無料でダウンロードできます。</p>
 
   <!-- ▼ Track 01 -->
   <div class="track">
-    <div class="title">Track 01 - Morning Light</div>
-    <div class="meta">BPM: 120 / Genre: Chill</div>
+    <div class="title">Type Beat</div>
+    <div class="meta">BPM: 135</div>
 
     <audio controls>
       <source src="https://drive.google.com/uc?export=download&id=11yl9in8ZSTGjegW9OGwqCRypbUNDbq2Y" type="audio/wav">
@@ -30,23 +29,7 @@
 
     <div>
       <a class="download" href="https://drive.google.com/uc?export=download&id=11yl9in8ZSTGjegW9OGwqCRypbUNDbq2Y" download>
-        この曲をダウンロード
-      </a>
-    </div>
-  </div>
-
-  <!-- ▼ Track 02 -->
-  <div class="track">
-    <div class="title">Track 02 - Night Drive</div>
-    <div class="meta">BPM: 100 / Genre: Lo-fi</div>
-
-    <audio controls>
-      <source src="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_2" type="audio/wav">
-    </audio>
-
-    <div>
-      <a class="download" href="https://drive.google.com/uc?export=download&id=YOUR_FILE_ID_2" download>
-        この曲をダウンロード
+        このBeatを無料でダウンロード
       </a>
     </div>
   </div>
