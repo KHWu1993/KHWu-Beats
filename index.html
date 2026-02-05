@@ -24,13 +24,17 @@
     }
     
     .track-body {
+      flex: 1; /* ← 右側を広げる */
       display: flex;
       flex-direction: column;
       justify-content: space-between; /* ← 中身を綺麗に配置 */
     }
     .title { font-weight: bold; font-size: 1.1em; }
     .meta { color: #666; font-size: 0.9em; margin-bottom: 5px; }
-    audio { width: 100%; margin-top: 5px; }
+    audio {
+      width: 100%;
+      min-width: 200px; /* 必要なら */
+    }
     .download { margin-top: 8px; display: inline-block; }
   </style>
 </head>
