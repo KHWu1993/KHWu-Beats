@@ -11,20 +11,22 @@
       padding: 15px;
       margin-bottom: 10px;
       border-radius: 6px;
-      display: flex;              /* 横並びにする */
-      gap: 15px;                  /* 画像と右側の余白 */
-      align-items: flex-start;
+      display: flex;
+      gap: 15px;
+      align-items: stretch;   /* ← 高さを揃えるポイント */
     }
+    
     .jacket {
       width: 120px;
       height: 120px;
-      background: #ddd;
+      object-fit: cover;
       border-radius: 6px;
-      object-fit: cover;          /* 画像を枠にフィット */
-      flex-shrink: 0;
     }
+    
     .track-body {
-      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* ← 中身を綺麗に配置 */
     }
     .title { font-weight: bold; font-size: 1.1em; }
     .meta { color: #666; font-size: 0.9em; margin-bottom: 5px; }
