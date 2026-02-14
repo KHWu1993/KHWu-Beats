@@ -92,15 +92,23 @@
 
     /* スマホ対応 */
     @media (max-width: 600px) {
-      .track {
-        max-width: 360px;
+      body {
+        max-width: 360px;   /* ← 説明文の幅に合わせる */
         margin: 0 auto;
       }
-      .track-body {
-        width: 50%;
+    
+      .track {
+        width: 100%;        /* ← body の幅に合わせて広がる */
       }
+    
+      .track-body {
+        width: 90%;
+        margin: 0 auto;
+      }
+    
       .jacket {
         width: 90%;
+        margin: 0 auto;
       }
     }
   </style>
