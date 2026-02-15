@@ -92,32 +92,35 @@
 
     /* スマホ対応 */
     @media (max-width: 600px) {
+    
       body {
-        max-width: 360px;   /* ← 説明文の幅に合わせる */
+        max-width: 360px;
         margin: 0 auto;
       }
     
       .track {
-        width: 100%;              /* body の幅に合わせて広がる */
-        flex-direction: column;   /* 縦並び */
+        width: 100%;
+        flex-direction: column;
         align-items: center;
-        min-height: 160px;        /* ← 高さをしっかり確保 */
-        padding: 12px 0;          /* 上下の余白も調整 */
+        min-height: 160px;
+        padding: 12px 0 !important;   /* ← PC の padding を確実に上書き */
+        gap: 8px !important;          /* ← gap も縮める */
       }
     
       .jacket {
-        width: 90px;              /* ← イメージ図通りのサイズ */
-        height: 90px;
+        width: 90px !important;       /* ← PC の 150px を確実に上書き */
+        height: 90px !important;
         margin: 0 auto;
       }
     
       .track-body {
         width: 90%;
-        margin: 8px auto 0;       /* 上に少し余白を追加してバランス調整 */
+        margin: 8px auto 0;
       }
     
       audio {
-        height: 32px;             /* ← audio コントロールの高さを統一 */
+        height: 32px;
+        width: 100%;
       }
     }
 
