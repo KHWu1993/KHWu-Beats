@@ -98,23 +98,29 @@
       }
     
       .track {
-        width: 100%;        /* ← body の幅に合わせて広がる */
-        flex-direction: column;
+        width: 100%;              /* body の幅に合わせて広がる */
+        flex-direction: column;   /* 縦並び */
         align-items: center;
+        min-height: 160px;        /* ← 高さをしっかり確保 */
+        padding: 12px 0;          /* 上下の余白も調整 */
+      }
+    
+      .jacket {
+        width: 90px;              /* ← イメージ図通りのサイズ */
+        height: 90px;
+        margin: 0 auto;
       }
     
       .track-body {
         width: 90%;
-        margin: 0 auto;
+        margin: 8px auto 0;       /* 上に少し余白を追加してバランス調整 */
       }
     
-      .jacket {
-        width: 90%;
-        margin: 0 auto;
-        height: auto;
+      audio {
+        height: 32px;             /* ← audio コントロールの高さを統一 */
       }
     }
-    
+
   </style>
 </head>
 
