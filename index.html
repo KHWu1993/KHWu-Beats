@@ -94,34 +94,52 @@
     /* スマホ対応 */
     @media (max-width: 600px) {
     
-      body {
-        max-width: 360px;
-        margin: 0 auto;
-      }
-    
       .track {
         width: 100%;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;       /* ← 横並びに戻す */
         align-items: center;
-        min-height: 160px;
-        padding: 12px 0 !important;   /* ← PC の padding を確実に上書き */
-        gap: 8px !important;          /* ← gap も縮める */
+        min-height: 160px;         /* ← カードの高さを確保 */
+        padding: 12px !important;
+        gap: 12px !important;
+        border-radius: 14px;
+        box-shadow: 0 6px 14px rgba(0,0,0,0.45);
       }
     
       .jacket {
-        width: 90px !important;       /* ← PC の 150px を確実に上書き */
+        width: 90px !important;
         height: 90px !important;
-        margin: 0 auto;
+        flex-shrink: 0;            /* ← 画像が潰れないように固定 */
+        border-radius: 8px;
       }
     
       .track-body {
-        width: 90%;
-        margin: 8px auto 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   /* ← タイトル・BPM・audio を中央寄せ */
+        gap: 6px;
+      }
+    
+      .title {
+        font-size: 1.1em;
+        margin: 0;
+      }
+    
+      .meta {
+        margin: 0;
+        font-size: 0.9em;
       }
     
       audio {
         height: 32px;
         width: 100%;
+      }
+    
+      .download {
+        padding: 6px 12px;
+        font-size: 0.85em;
+        width: fit-content;
       }
     }
 
